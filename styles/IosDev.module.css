@@ -1,0 +1,5 @@
+.mainBody {
+    height: 100vh;
+    background: linear-gradient(to right, #000, #252627);
+    color: white;
+}
