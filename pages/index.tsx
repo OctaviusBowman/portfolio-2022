@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             </Link>
           </motion.div>
           <Link href="/webDev">
-            <p className={styles.webTitle}>{`<Web Dev/>`}</p>
+            <motion.div className={styles.webTitle}>{`<Web Dev/>`}</motion.div>
           </Link>
         </section>
 
