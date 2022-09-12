@@ -39,6 +39,9 @@ const Home: NextPage = () => {
               <Browser className={styles.browserLogo} />
             </Link>
           </motion.div>
+          <Link href="/webDev">
+            <p className={styles.webTitle}>{`<Web Dev/>`}</p>
+          </Link>
         </section>
 
         <section className={styles.bottomBg}>
