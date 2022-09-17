@@ -72,10 +72,38 @@
     transition: all .6s cubic-bezier(.19, 1, .22, 1);
 }
 
+.buttonDes {
+    display: flex;
+    justify-content: center;
+    color: #2f93f1;
+    background-color: white;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 0.8rem 1.6rem;
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1;
+    z-index: 5;
+    transition: all .6s cubic-bezier(.19, 1, .22, 1);
+}
+
+.buttonDes:hover {
+    cursor: pointer;
+    background-color: #808080;
+    border-color: white;
+    color: white;
+}
+
 .resumeButton:hover {
     background-color: #808080;
     border-color: white;
     color: white;
+}
+
+.buttonContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .aboutMe {
@@ -86,6 +114,7 @@
 
 .projects {
     display: grid;
+    gap: 1.5rem;
 }
 
 .projectTitle {
@@ -97,36 +126,47 @@
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .projectOne {
-    height: 70vh;
-    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background: linear-gradient(to right, #0036c9, #2f93f1);
-    width: 95vw;
-    margin-left: 2vw;
-    margin-bottom: 50px;
+    margin: auto 2vw;
     border-radius: 10px;
+    /* height: 70vh; */
+    /* min-height: 50vh; */
+    /* width: 95vw; */
+    /* gap: 5em; */
+    /* margin-bottom: 50px; */
+}
+
+.projectInfo {
+    font-size: 1.25rem;
+    padding: 0vw 2vw;
+    grid-column: span 1;
+}
+
+.projectDemo {
+    grid-column: span 2
 }
 
 .projectTwo {
-    height: 70vh;
-    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background: linear-gradient(to right, #0036c9, #2f93f1);
-    width: 95vw;
-    margin-left: 2vw;
-    margin-bottom: 50px;
+    margin: auto 2vw;
     border-radius: 10px;
 }
 
 .projectThree {
-    height: 70vh;
-    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background: linear-gradient(to right, #0036c9, #2f93f1);
-    width: 95vw;
-    margin-left: 2vw;
-    margin-bottom: 50px;
+    margin: auto 2vw;
     border-radius: 10px;
+    margin-bottom: 1.5rem;
 }
 
 .linkedin {
@@ -197,14 +237,17 @@
 
     .projectOne {
         width: 96vw;
+        grid-auto-flow: column;
     }
 
     .projectTwo {
         width: 96vw;
+        grid-auto-flow: column;
     }
 
     .projectThree {
         width: 96vw;
+        grid-auto-flow: column;
     }
 
     .footer hr {

@@ -34,6 +34,18 @@
   width: 100vw;
 }
 
+.appleLogo {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 2rem;
+  user-select: none;
+  color: white;
+  padding-top: 60vh;
+}
+
 .webTitle {
   position: absolute;
   top: 47%;
@@ -49,5 +61,9 @@
   .webTitle {
     font-size: 1rem;
     color: black;
+  }
+
+  .appleLogo {
+    font-size: 1rem;
   }
 }

@@ -37,17 +37,42 @@ function WebDev() {
         <section className={styles.projects}>
           <title className={styles.projectTitle}>PROJECTS</title>
           <div className={styles.projectOne}>
-            <div className={styles.projectInfo}></div>
+            <div className={styles.projectInfo}>
+              <h1>Touch Speed (Desktop)</h1>
+              <p>Designed to test how fast you type, this site starts a sixty second timer from the time you
+                start typing and determines how many words you've typed in the allotted time.
+                <br /> <br />
+                (Back-end coming soon that track's progress of each user and gives them the option to create
+                a user profile and a chance to feature on the global leaderboard)</p>
+              <div className={styles.buttonContainer}>
+                <Link href="https://www.touchspeedtest.com/" target="_blank">
+                  <div className={styles.buttonDes}>See Live</div>
+                </Link>
+                <Link href="https://github.com/OctaviusBowman/touchspeed" target="_blank">
+                  <div className={styles.buttonDes}>Source Code</div>
+                </Link>
+              </div>
+            </div>
             <div className={styles.projectDemo}></div>
           </div>
 
           <div className={styles.projectTwo}>
-            <div className={styles.projectInfo}></div>
+            <div className={styles.projectInfo}>
+              <h1>Junior Software Job Board 🚧(Under construction)🚧</h1>
+              <p>Uses a cron service worker that updates every minute to fetch posted jobs on github 
+                (can be modified to scrape data from any site). Proceeds to filter the fetched results
+                 looking for keyword such as manager, sr. architect, etc to eliminate the job listing.
+                  Then serves the sorted data from the redis client to the website.
+                   Built utilizing: React, Express.js, Redis, Node.js, Cron</p>
+            </div>
             <div className={styles.projectDemo}></div>
           </div>
 
           <div className={styles.projectThree}>
-            <div className={styles.projectInfo}></div>
+            <div className={styles.projectInfo}>
+              <h1>Recipe Guide (Desktop)</h1>
+              <p>Finds at least one recipe guide for any food you type in the search bar</p>
+            </div>
             <div className={styles.projectDemo}></div>
           </div>
         </section>
