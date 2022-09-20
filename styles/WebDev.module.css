@@ -155,6 +155,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    padding-bottom: 3rem;
 }
 
 .projectDemo {
@@ -257,6 +258,7 @@
 
     .projectInfo {
         order: 1;
+        padding-bottom: 3rem;
     }
 }
 

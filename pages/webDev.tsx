@@ -66,7 +66,11 @@ function WebDev() {
 
           <div className={styles.projectTwo}>
             <div className={styles.projectInfo}>
-              <h1>Junior Software Job Board <p>🚧(Under construction)🚧</p></h1>
+              <h1>
+                Junior Software Job Board
+                <br />
+                 🚧(Under construction)🚧
+                 </h1>
               <p>Uses a cron service worker that updates every minute to fetch posted jobs on github
                 (can be modified to scrape data from any site). Proceeds to filter the fetched results
                 looking for keyword such as manager, sr. architect, etc to eliminate the job listing.
