@@ -3,3 +3,37 @@
     background: linear-gradient(to right, #000, #252627);
     color: white;
 }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gridContainer p {
+    color: #808080;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 1285px) {
+    .gridContainer p {
+        font-size: 6rem;
+    }
+}

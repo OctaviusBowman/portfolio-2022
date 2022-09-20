@@ -1,5 +1,8 @@
 import styles from "../styles/iosDev.module.css"
+import Link from "next/link"
 import Head from 'next/head'
+import Arrow from '../public/BackArrow.svg'
+
 
 function iosDev() {
 
@@ -10,7 +13,14 @@ function iosDev() {
         <meta name="iOS Dev" content="iOS Apps" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className={styles.mainBody}>iosDev</div>
+      <div className={styles.mainBody}>
+        <div className={styles.gridContainer}>
+          <p>Coming Soon...</p>
+          <Link href="/">
+          <Arrow className={styles.arrow} />
+        </Link>
+        </div>
+      </div>
     </div>
   )
 }

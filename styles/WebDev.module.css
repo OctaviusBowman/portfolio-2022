@@ -101,11 +101,8 @@
 .buttonContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* gap: 1rem; */
-    /* justify-content: center; */
     align-content: center;
     justify-items: center;
-    /* padding: 0.8rem 1.6rem; */
 }
 
 .aboutMe {

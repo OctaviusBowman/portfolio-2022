@@ -49,11 +49,15 @@ function WebDev() {
                 (Back-end coming soon that track's progress of each user and gives them the option to create
                 a user profile and a chance to feature on the global leaderboard)</p>
               <div className={styles.buttonContainer}>
-                <Link href="https://www.touchspeedtest.com/" target="_blank">
-                  <div className={styles.buttonDes}>See Live</div>
+                <Link href="https://www.touchspeedtest.com/">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>See Live</div>
+                  </a>
                 </Link>
-                <Link href="https://github.com/OctaviusBowman/touchspeed" target="_blank">
-                  <div className={styles.buttonDes}>Source Code</div>
+                <Link href="https://github.com/OctaviusBowman/touchspeed">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>Source Code</div>
+                  </a>
                 </Link>
               </div>
             </div>
@@ -69,19 +73,23 @@ function WebDev() {
               <h1>
                 Junior Software Job Board
                 <br />
-                 🚧(Under construction)🚧
-                 </h1>
+                🚧(Under construction)🚧
+              </h1>
               <p>Uses a cron service worker that updates every minute to fetch posted jobs on github
                 (can be modified to scrape data from any site). Proceeds to filter the fetched results
                 looking for keyword such as manager, sr. architect, etc to eliminate the job listing.
                 Then serves the sorted data from the redis client to the website.
                 Built utilizing: React, Express.js, Redis, Node.js, Cron</p>
               <div className={styles.buttonContainer}>
-                <Link href="https://juniorlevelsoftwarejobs.com/" target="_blank">
-                  <div className={styles.buttonDes}>See Live</div>
+                <Link href="https://juniorlevelsoftwarejobs.com/">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>See Live</div>
+                  </a>
                 </Link>
-                <Link href="https://github.com/OctaviusBowman/juniorlevelsoftwarejobs" target="_blank">
-                  <div className={styles.buttonDes}>Source Code</div>
+                <Link href="https://github.com/OctaviusBowman/juniorlevelsoftwarejobs">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>Source Code</div>
+                  </a>
                 </Link>
               </div>
             </div>
@@ -98,10 +106,14 @@ function WebDev() {
               <p>Finds at least one recipe guide for any food you type in the search bar</p>
               <div className={styles.buttonContainer}>
                 <Link href="https://the-recipe-guide.netlify.app/" target="_blank">
-                  <div className={styles.buttonDes}>See Live</div>
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>See Live</div>
+                  </a>
                 </Link>
                 <Link href="https://github.com/OctaviusBowman/RecipeApp" target="_blank">
-                  <div className={styles.buttonDes}>Source Code</div>
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>Source Code</div>
+                  </a>
                 </Link>
               </div>
             </div>
