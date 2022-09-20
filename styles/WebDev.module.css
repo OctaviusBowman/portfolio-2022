@@ -175,6 +175,12 @@
     overflow: hidden;
 }
 
+.projectOne,
+.projectTwo,
+.projectThree {
+    box-shadow: 12px 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
 .projectOne {
     display: grid;
     grid-template-columns: 1fr;
