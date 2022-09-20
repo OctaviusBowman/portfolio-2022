@@ -1,4 +1,4 @@
-import styles from "../styles/iosDev.module.css"
+import styles from "../styles/IosDev.module.css"
 import Link from "next/link"
 import Head from 'next/head'
 import Arrow from '../public/BackArrow.svg'
