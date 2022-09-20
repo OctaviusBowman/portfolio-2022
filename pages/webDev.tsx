@@ -27,7 +27,7 @@ function WebDev() {
             {`< WEB DEVELOPMENT />`}
           </title>
           <p className={styles.textBody}>
-            I'm always working on something. <br /> <br />
+            I am always working on something. <br /> <br />
             As of late I do a lot of full-stack web development with tools like <br /> React, Webpack, and TailWindCSS,  Typescript, trpc, and nextAuth;<br />
             with a focus on writing clean reusable code. <br /> <br />
             My preference for writing the backend is Node.js coupled with MongoDB or MySQL.
@@ -44,9 +44,9 @@ function WebDev() {
             <div className={styles.projectInfo}>
               <h1>Touch Speed (Desktop)</h1>
               <p>Designed to test how fast you type, this site starts a sixty second timer from the time you
-                start typing and determines how many words you've typed in the allotted time.
+                start typing and determines how many words you have typed in the allotted time.
                 <br /> <br />
-                (Back-end coming soon that track's progress of each user and gives them the option to create
+                (Back-end coming soon that tracks progress of each user and gives them the option to create
                 a user profile and a chance to feature on the global leaderboard)</p>
               <div className={styles.buttonContainer}>
                 <Link href="https://www.touchspeedtest.com/">
