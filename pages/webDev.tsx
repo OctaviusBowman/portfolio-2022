@@ -5,6 +5,10 @@ import LinkedIn from '../public/Linkedin.svg'
 import Github from '../public/Github.svg'
 import Arrow from '../public/BackArrow.svg'
 import Mail from '../public/Mail.svg'
+import Image from "next/image";
+import PjOne from '../public/touchspeed.png'
+import PjTwo from '../public/juniorlevelsoftwarejobs.png'
+import PjThree from '../public/the-recipe-guide.png'
 
 
 
@@ -53,27 +57,56 @@ function WebDev() {
                 </Link>
               </div>
             </div>
-            <div className={styles.projectDemo}></div>
+            <div className={styles.projectDemo}>
+              <div className={styles.projectDemoWrapper}>
+                <Image src={PjOne} alt='Touchspeed website screenshot' />
+              </div>
+            </div>
           </div>
 
           <div className={styles.projectTwo}>
             <div className={styles.projectInfo}>
-              <h1>Junior Software Job Board 🚧(Under construction)🚧</h1>
-              <p>Uses a cron service worker that updates every minute to fetch posted jobs on github 
+              <h1>Junior Software Job Board <p>🚧(Under construction)🚧</p></h1>
+              <p>Uses a cron service worker that updates every minute to fetch posted jobs on github
                 (can be modified to scrape data from any site). Proceeds to filter the fetched results
-                 looking for keyword such as manager, sr. architect, etc to eliminate the job listing.
-                  Then serves the sorted data from the redis client to the website.
-                   Built utilizing: React, Express.js, Redis, Node.js, Cron</p>
+                looking for keyword such as manager, sr. architect, etc to eliminate the job listing.
+                Then serves the sorted data from the redis client to the website.
+                Built utilizing: React, Express.js, Redis, Node.js, Cron</p>
+              <div className={styles.buttonContainer}>
+                <Link href="https://juniorlevelsoftwarejobs.com/" target="_blank">
+                  <div className={styles.buttonDes}>See Live</div>
+                </Link>
+                <Link href="https://github.com/OctaviusBowman/juniorlevelsoftwarejobs" target="_blank">
+                  <div className={styles.buttonDes}>Source Code</div>
+                </Link>
+              </div>
             </div>
-            <div className={styles.projectDemo}></div>
+            <div className={styles.projectDemo}>
+              <div className={styles.projectDemoWrapper}>
+                <Image src={PjTwo} alt='Touchspeed website screenshot' />
+              </div>
+            </div>
           </div>
 
           <div className={styles.projectThree}>
             <div className={styles.projectInfo}>
               <h1>Recipe Guide (Desktop)</h1>
               <p>Finds at least one recipe guide for any food you type in the search bar</p>
+              <div className={styles.buttonContainer}>
+                <Link href="https://the-recipe-guide.netlify.app/" target="_blank">
+                  <div className={styles.buttonDes}>See Live</div>
+                </Link>
+                <Link href="https://github.com/OctaviusBowman/RecipeApp" target="_blank">
+                  <div className={styles.buttonDes}>Source Code</div>
+                </Link>
+              </div>
             </div>
-            <div className={styles.projectDemo}></div>
+
+            <div className={styles.projectDemo}>
+              <div className={styles.projectDemoWrapper}>
+                <Image src={PjThree} alt='Touchspeed website screenshot' />
+              </div>
+            </div>
           </div>
         </section>
         <footer className={styles.footer}>

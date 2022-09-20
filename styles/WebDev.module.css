@@ -73,18 +73,16 @@
 }
 
 .buttonDes {
-    display: flex;
-    justify-content: center;
+    padding: 0.8rem 1.6rem;
+    white-space: nowrap;
     color: #2f93f1;
     background-color: white;
     border-style: solid;
     border-radius: 3px;
-    padding: 0.8rem 1.6rem;
     font-weight: 700;
     font-size: 1.15rem;
-    line-height: 1;
-    z-index: 5;
     transition: all .6s cubic-bezier(.19, 1, .22, 1);
+    margin-bottom: 1rem;
 }
 
 .buttonDes:hover {
@@ -102,8 +100,12 @@
 
 .buttonContainer {
     display: grid;
-    gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    /* gap: 1rem; */
+    /* justify-content: center; */
+    align-content: center;
+    justify-items: center;
+    /* padding: 0.8rem 1.6rem; */
 }
 
 .aboutMe {
@@ -114,7 +116,8 @@
 
 .projects {
     display: grid;
-    gap: 1.5rem;
+    gap: 3rem;
+    color: white;
 }
 
 .projectTitle {
@@ -129,32 +132,59 @@
     text-align: center;
 }
 
-.projectOne {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background: linear-gradient(to right, #0036c9, #2f93f1);
-    margin: auto 2vw;
-    border-radius: 10px;
-    /* height: 70vh; */
-    /* min-height: 50vh; */
-    /* width: 95vw; */
-    /* gap: 5em; */
-    /* margin-bottom: 50px; */
+.projects h1 {
+    color: white;
+    font-weight: 700;
 }
 
 .projectInfo {
-    font-size: 1.25rem;
+    display: grid;
+    font-size: 1.15rem;
     padding: 0vw 2vw;
     grid-column: span 1;
+    order: 2;
+}
+
+.projectInfo h1 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.projectInfo p {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .projectDemo {
-    grid-column: span 2
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-column: span 2;
+    order: 1;
+    padding: 20px;
+}
+
+.projectDemoWrapper {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.projectOne {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: linear-gradient(to right, #0036c9, #2f93f1);
+    margin: auto 2vw;
+    border-radius: 10px;
 }
 
 .projectTwo {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     background: linear-gradient(to right, #0036c9, #2f93f1);
     margin: auto 2vw;
     border-radius: 10px;
@@ -162,11 +192,11 @@
 
 .projectThree {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     background: linear-gradient(to right, #0036c9, #2f93f1);
     margin: auto 2vw;
     border-radius: 10px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .linkedin {
@@ -213,6 +243,23 @@
     color: #6a6a6a
 }
 
+@media (min-width: 1285px) {
+
+    .projectOne,
+    .projectTwo,
+    .projectThree {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projectDemo {
+        order: 2;
+    }
+
+    .projectInfo {
+        order: 1;
+    }
+}
+
 @media (max-width: 750px) {
     .resumeButton {
         margin-left: 40vw;
@@ -233,21 +280,6 @@
     .projectTitle {
         font-size: 1.75rem;
         font-weight: 800;
-    }
-
-    .projectOne {
-        width: 96vw;
-        grid-auto-flow: column;
-    }
-
-    .projectTwo {
-        width: 96vw;
-        grid-auto-flow: column;
-    }
-
-    .projectThree {
-        width: 96vw;
-        grid-auto-flow: column;
     }
 
     .footer hr {
