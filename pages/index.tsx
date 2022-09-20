@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css'
 
 import Browser from '../public/Browser.svg'
 import Phone from '../public/Phone.svg'
-import Apple from '../public/Apple.svg'
 import Link from 'next/link'
 
 const Home: NextPage = () => {
@@ -36,11 +35,11 @@ const Home: NextPage = () => {
               duration: .1
             }
           }}>
-            <Link href="/webDev">
+            <Link href="/web-dev">
               <Browser className={styles.browserLogo} />
             </Link>
           </motion.div>
-          <Link href="/webDev">
+          <Link href="/web-dev">
             <motion.div className={styles.webTitle}>{`<Web Dev/>`}</motion.div>
           </Link>
         </section>
@@ -64,11 +63,11 @@ const Home: NextPage = () => {
               duration: .1
             }
           }}>
-            <Link href="/iosDev">
+            <Link href="/ios-dev">
               <Phone className={styles.phoneLogo} />
             </Link>
           </motion.div>
-          <Link href="/iosDev">
+          <Link href="/ios-dev">
             <div className={styles.appleLogo}>{`iOS`}</div>
           </Link>
         </section>
