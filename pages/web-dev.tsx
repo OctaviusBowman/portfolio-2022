@@ -1,6 +1,7 @@
 import styles from "../styles/WebDev.module.css"
 import Head from 'next/head'
 import Link from 'next/link';
+import Twitter from '../public/twitter.svg'
 import LinkedIn from '../public/Linkedin.svg'
 import Github from '../public/Github.svg'
 import Arrow from '../public/BackArrow.svg'
@@ -142,6 +143,11 @@ function WebDev() {
             <Link href="mailto:octaviusbowman@gmail.com">
               <a target="_blank">
                 <Mail className={styles.mail} />
+              </a>
+            </Link>
+            <Link href="https://twitter.com/octavius_db">
+              <a target="_blank">
+                <Twitter className={styles.twitter} />
               </a>
             </Link>
           </div>

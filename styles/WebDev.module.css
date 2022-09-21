@@ -222,6 +222,12 @@
     padding-top: 1.2rem;
 }
 
+.twitter {
+    height: 50px;
+    width: 50px;
+    padding: 1rem;
+}
+
 .arrow {
     height: 50px;
     width: 50px;
