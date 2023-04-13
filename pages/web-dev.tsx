@@ -10,6 +10,7 @@ import Image from "next/image";
 import PjOne from '../public/touchspeed.png'
 import PjTwo from '../public/juniorlevelsoftwarejobs.png'
 import PjThree from '../public/the-recipe-guide.png'
+import PjChirp from '../public/Chirp.png'
 
 
 
@@ -41,6 +42,41 @@ function WebDev() {
         </section>
         <section className={styles.projects}>
           <title className={styles.projectTitle}>PROJECTS</title>
+
+
+
+
+
+          <div className={styles.projectOne}>
+            <div className={styles.projectInfo}>
+              <h1>Chirp Chirp</h1>
+              <p><p>Emoji only version of twitter (Add something 😊)</p>
+                <br />
+                Built using the T3 Stack (Typescript, Clerk[Third party authentication], TRPC, Next.js, Prisma, TailWindCSS)
+                 </p>
+              <div className={styles.buttonContainer}>
+                <Link href="https://chirp-chirp-seven.vercel.app/">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>See Live</div>
+                  </a>
+                </Link>
+                <Link href="https://github.com/OctaviusBowman/chirp-chirp">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>Source Code</div>
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.projectDemo}>
+              <div className={styles.projectDemoWrapper}>
+                <Image src={PjChirp} alt='Chirp Chirp website screenshot' />
+              </div>
+            </div>
+          </div>
+
+
+
+
           <div className={styles.projectOne}>
             <div className={styles.projectInfo}>
               <h1>Touch Speed (Desktop)</h1>
