@@ -32,9 +32,9 @@ function WebDev() {
             I am always working on something. <br /> <br />
             As of late I do a lot of full-stack web development with tools like <br /> React, Webpack, and TailWindCSS,  Typescript, trpc, and nextAuth;<br />
             with a focus on writing clean reusable code. <br /> <br />
-            My preference for writing the backend is Node.js coupled with MongoDB or MySQL.
+            My preference for writing the backend is MongoDB or MySQL.
           </p>
-          <a className={styles.resume} href="/OctaviusBowman-Resume.pdf" target="_blank" download>
+          <a className={styles.resume} href="/Resume_2023.pdf" target="_blank" download>
             <div className={styles.resumeButton}>
               Resume
             </div>
