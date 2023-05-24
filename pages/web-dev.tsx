@@ -11,6 +11,7 @@ import PjOne from '../public/touchspeed.png'
 import PjTwo from '../public/juniorlevelsoftwarejobs.png'
 import PjThree from '../public/the-recipe-guide.png'
 import PjChirp from '../public/Chirp.png'
+import PJGen from '../public/graphicDraft.png'
 
 
 
@@ -43,6 +44,31 @@ function WebDev() {
         <section className={styles.projects}>
           <title className={styles.projectTitle}>PROJECTS</title>
 
+
+
+
+
+          <div className={styles.projectOne}>
+            <div className={styles.projectInfo}>
+              <h1>Graphic Draft</h1>
+              <p><p>Ai generated Icons</p>
+                <br />
+                Built using the T3 Stack (Typescript, Oauth, TRPC, Next.js, Prisma, TailWindCSS)
+                 </p>
+              <div className={styles.buttonContainer}>
+                <Link href="https://graphicdraft.com">
+                  <a target="_blank">
+                    <div className={styles.buttonDes}>See Live</div>
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.projectDemo}>
+              <div className={styles.projectDemoWrapper}>
+                <Image src={PJGen} alt='Chirp Chirp website screenshot' />
+              </div>
+            </div>
+          </div>
 
 
 
