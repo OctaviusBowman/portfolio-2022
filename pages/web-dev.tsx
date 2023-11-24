@@ -35,7 +35,7 @@ function WebDev() {
             with a focus on writing clean reusable code. <br /> <br />
             My preference for writing the backend is MongoDB or MySQL.
           </p>
-          <a className={styles.resume} href="/Resume_5-25-23.pdf" target="_blank" download>
+          <a className={styles.resume} href="/Resume_10-23-2023.pdf" target="_blank" download>
             <div className={styles.resumeButton}>
               Resume
             </div>
