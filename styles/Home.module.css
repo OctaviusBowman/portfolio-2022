@@ -66,4 +66,9 @@
   .appleLogo {
     font-size: 1rem;
   }
+
+  .browserLogo {
+    height: calc(73vh);
+    width: 100vw;
+  }
 }
